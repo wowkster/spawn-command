@@ -1,0 +1,27 @@
+name: SpawnCommand
+version: 1.0
+main: com.adrianwowk.spawncommand.SpawnCommand
+author: Adrian Wowk
+commands:
+  spawn:
+    usage: /<command>
+  cancel:
+    usage: /<command>
+  ckick:
+    usage: /<command>
+  afk:
+    usage: /<command>
+  crestart:
+    usage: /<command>
+  shutdown:
+    usage: /<command>
+api-version: 1.14
+permissions:
+  sc.spawn:
+    description: Allows use of /spawn command
+    default: true
+  sc.*:
+    description: Wildcard permission
+    default: op
+    children:
+      sc.spawn: true
